@@ -2,23 +2,28 @@ document.getElementById('input-btn').addEventListener('click',function(e){
     const amount = addMoneyInputValueById('input-value-money');
     const moneystore = addMoneyInputValueByIdStore('money');
     const IhaveMoney =IhaveMOney('money-amout');
-   
+
     if(isNaN(amount) || amount < 0 ){
         alert('please try again')
         return
     }
-    if(amount >= IhaveMoney){
-        alert('please go to earn money')
-        return
-    }
-    const newBalance = amount + moneystore;
-    document.getElementById('money').innerText = newBalance;
+    if(IhaveMoney < amount){
+      alert('please go to earn money')
+      return
+  }
+  
+    if(IhaveMoney >= 0){
+    const newBalance =IhaveMoney - amount;
+    document.getElementById('money-amout').innerText = newBalance;}
 
-    if(IhaveMoney > 0){
-      const remainMoney = IhaveMoney - newBalance;
-      document.getElementById('money-amout').innerText = remainMoney;
+    
+
+
+      document.getElementById('money').innerText = amount;
       document.getElementById('input-value-money').value = ' ';
-    }
+  
+    
+    
    
     // modal start 
     const modal = document.getElementById('modal')
@@ -60,19 +65,19 @@ document.getElementById('input-btn').addEventListener('click',function(e){
       alert('please try again')
       return
   }
-  if(amount2 >= IhaveMoney2){
+  if(amount2 > IhaveMoney2){
       alert('please go to earn money')
       return
   }
 
 
-    const newBalance = amount2 + moneystore2;
-    document.getElementById('money2').innerText = newBalance;
+  if(IhaveMoney2 >= 0){
+    const newBalance =IhaveMoney2 - amount2;
+    document.getElementById('money-amout').innerText = newBalance;}
 
-  
-    const remainMoney = IhaveMoney2 - newBalance;
-    document.getElementById('money-amout').innerText = remainMoney;
-     document.getElementById('input-value-money2').value = ' ';
+    
+      document.getElementById('money2').innerText = amount2;
+      document.getElementById('input-value-money2').value = ' ';
        // modal start 
     const modal = document.getElementById('modal')
     modal.classList.remove('hidden')
@@ -107,18 +112,20 @@ document.getElementById('input-btn').addEventListener('click',function(e){
         alert('please try again')
         return
     }
-    if(amount3 >= IhaveMoney3){
+    if(amount3 > IhaveMoney3){
         alert('please go to earn money')
         return
     }
     
-      const newBalance = amount3 + moneystore3;
-      document.getElementById('money3').innerText = newBalance;
+    if(IhaveMoney3 >= 0){
+      const newBalance =IhaveMoney3 - amount3;
+      document.getElementById('money-amout').innerText = newBalance;}
   
-    
-      const remainMoney = IhaveMoney3 - newBalance;
-      document.getElementById('money-amout').innerText = remainMoney;
-      document.getElementById('input-value-money3').value = ' ';
+      
+  
+  
+        document.getElementById('money3').innerText = amount3;
+        document.getElementById('input-value-money3').value = ' ';
         // modal start 
     const modal = document.getElementById('modal')
     modal.classList.remove('hidden')
