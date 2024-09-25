@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0 z-40">
+        <nav class="px-36 py-5 bg-[#F9F7F3] ">  
+            <div class="navbar   flex  flex-col lg:flex-row lg:justify-between w-[100%]  ">
+             <div>
+                <button id="homes" class="btn  bg-[#B4F461]  font-semibold text-xl border-none  px-8"> Blog </button>
+              
+             </div>
+               <div class="flex gap-3 items-center">
+                <img src="assets/logo.png" alt="">
+                <h3 class="font-extrabold text-3xl">Donate Bangladesh</h3>
+               </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/coin.png" alt="" >
+                 <p id="money-amout" class="text-[#232323]">5500 BDT</p>
+                </div>
+              </div>
+      
+        </nav>
+       </header>
+       <main class="mt-10 px-36">
+<div class="flex items-center gap-4">
+    <h1 class=" font-extrabold text-4xl">Important FAQ</h1>
+    <img src="assets/png-transparent-red-question-mark-question-mark-desktop-confused-text-cartoon-question-thumbnail-removebg-preview.png" alt="" class="h-16 ">
+</div>
+<div class="mt-10">
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface that browsers implement to provide a structured representation of a web page. It allows developers to interact with and manipulate the content, structure, and style of a document (typically HTML or XML) using programming languages like JavaScript.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>Use getElementById() for selecting elements by ID.
+            Use getElementsByClassName() and getElementsByTagName() for selecting by class or tag names, respectively.
+            Use querySelector() for more complex CSS selector queries.
+            Use querySelectorAll() to select all matching elements.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>1:Event Bubbling
+            2:Single Listener
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM</div>
+        <div class="collapse-content">
+          <p>1:setAttribute()
+             2:removeAttribute()
+          </p>
+        </div>
+      </div>
+</div>
+       </main>
+</body>
+</html>

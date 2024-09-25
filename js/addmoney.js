@@ -66,7 +66,7 @@ document.getElementById('input-btn').addEventListener('click',function(e){
     const date  = new Date().toString();
    const section = document.getElementById('History-section');
     const div = document.createElement('div');
-    div.classList.add("collapse" , "bg-base-200","p-7")
+    div.classList.add("collapse" , "bg-base-200","p-7","mb-8")
     const h3 = document.createElement('h3');
     h3.classList.add("text-2xl" , "font-extrabold")
     h3.innerText = `${amount2} Taka is Donated for famine-2024 at Feni, Bangladesh`;
@@ -103,7 +103,7 @@ document.getElementById('input-btn').addEventListener('click',function(e){
     const date  = new Date().toString();
     const section = document.getElementById('History-section');
      const div = document.createElement('div');
-     div.classList.add("collapse" , "bg-base-200","p-7","mb-8")
+     div.classList.add("collapse" , "bg-base-200","p-7")
      const h3 = document.createElement('h3');
      h3.classList.add("text-2xl" , "font-extrabold")
      h3.innerText = `${amount3} Aid for Injured in the Quota Movement`;
@@ -125,14 +125,16 @@ document.getElementById('input-btn').addEventListener('click',function(e){
 document.getElementById('History').addEventListener('click',function(){
    
  const id = hidden('History-section');
- 
+ document.getElementById('donation').classList.remove('bg-[#B4F461]')
+ document.getElementById('History').classList.add('bg-[#B4F461]')
  
      
 })
 document.getElementById('donation').addEventListener('click',function(){
    
   const id = hidden('main-donation-club');
-   
+  document.getElementById('History').classList.remove('bg-[#B4F461]')
+  document.getElementById('donation').classList.add('bg-[#B4F461]')
       
  })
 
