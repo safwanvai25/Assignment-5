@@ -14,7 +14,7 @@
         <nav class="px-36 py-5 bg-[#F9F7F3] ">  
             <div class="navbar   flex  flex-col lg:flex-row lg:justify-between w-[100%]  ">
              <div>
-                <button class="btn  bg-[#B4F461]  font-semibold text-xl border-none  px-8"> Blog </button>
+                <button id="Blog" class="btn  bg-[#B4F461]  font-semibold text-xl border-none  px-8"> Blog </button>
               
              </div>
                <div class="flex gap-3 items-center">
@@ -116,8 +116,11 @@
     
     <script src="./js/utilities.js"></script>
     <script src="./js/addmoney.js"></script>
-    <script src="./js/history.js"></script>
-    <script src="./js/link.js"></script>
+   <script>
+     document.getElementById('Blog').addEventListener('click',function(){
+    window.location.href = 'blog.html'
+})
+   </script>
     
 </body>
 </html>
