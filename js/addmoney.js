@@ -14,10 +14,20 @@ document.getElementById('input-btn').addEventListener('click',function(e){
     const newBalance = amount + moneystore;
     document.getElementById('money').innerText = newBalance;
 
-  
-    const remainMoney = IhaveMoney - newBalance;
-    document.getElementById('money-amout').innerText = remainMoney;
-     
+    if(IhaveMoney > 0){
+      const remainMoney = IhaveMoney - newBalance;
+      document.getElementById('money-amout').innerText = remainMoney;
+      document.getElementById('input-value-money').value = ' ';
+    }
+   
+    // modal start 
+    const modal = document.getElementById('modal')
+    modal.classList.remove('hidden')
+    document.getElementById('close').addEventListener('click',function(event){
+      event.preventDefault();
+      modal.classList.add('hidden')
+    })
+    // modal end 
     // create  history box 
     const date  = new Date().toString();
    const section = document.getElementById('History-section');
@@ -62,6 +72,15 @@ document.getElementById('input-btn').addEventListener('click',function(e){
   
     const remainMoney = IhaveMoney2 - newBalance;
     document.getElementById('money-amout').innerText = remainMoney;
+     document.getElementById('input-value-money2').value = ' ';
+       // modal start 
+    const modal = document.getElementById('modal')
+    modal.classList.remove('hidden')
+    document.getElementById('close').addEventListener('click',function(event){
+      event.preventDefault();
+      modal.classList.add('hidden')
+    })
+    // modal end 
     // create  history box 
     const date  = new Date().toString();
    const section = document.getElementById('History-section');
@@ -99,6 +118,15 @@ document.getElementById('input-btn').addEventListener('click',function(e){
     
       const remainMoney = IhaveMoney3 - newBalance;
       document.getElementById('money-amout').innerText = remainMoney;
+      document.getElementById('input-value-money3').value = ' ';
+        // modal start 
+    const modal = document.getElementById('modal')
+    modal.classList.remove('hidden')
+    document.getElementById('close').addEventListener('click',function(event){
+      event.preventDefault();
+      modal.classList.add('hidden')
+    })
+    // modal end 
        // create  history box 
     const date  = new Date().toString();
     const section = document.getElementById('History-section');

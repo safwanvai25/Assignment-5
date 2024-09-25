@@ -112,10 +112,27 @@
      <section id="History-section" class="mt-10 ">
 
      </section>
+     <section id="modal" class=" hidden fixed bottom-[30%]  left-4  lg:left-[40%] w-[500px]">
+<div class="w-full">
+  <div class="modal-box flex flex-col items-center">
+    <h3 class="text-4xl font-extrabold ">Congrats!</h3>
+    <img class="h-10 mt-5" src="assets/coin.png" alt="">
+    <p class="py-4 text-xl">You have Donated for human kind</p>
+    <h2 class="text-2xl font-extrabold ">Successfully</h2>
+    <div class="modal-action">
+      <form >
+       
+        <button id="close" class="btn font-bold">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</div>
+     </section>
        </main>
     
     <script src="./js/utilities.js"></script>
     <script src="./js/addmoney.js"></script>
+    
    <script>
      document.getElementById('Blog').addEventListener('click',function(){
     window.location.href = 'blog.html'
